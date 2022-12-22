@@ -1,8 +1,8 @@
-let num1 = prompt('Enter the number', '')
-let num2 = prompt('Enter the number', '')
+let n1 = prompt('Enter the number', '')
+let n2 = prompt('Enter the number', '')
 
-if(Number(num1) && Number(num2)) {
-  console.log(num1.toString(num2))
+if(Number(n1) && Number(n2)) {
+  console.log(n1.toString(n2))
 } else {
   console.log("Некорректный ввод!")
 }
