@@ -22,3 +22,4 @@ const selectFromInterval = (arrOfNums, fValOfIntrvl, sValOfIntrvl) => {
   }
 }
 
+//Big O: O(n²)
