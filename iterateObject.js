@@ -1,6 +1,4 @@
-let myIterable = {
-  from: 1,
-  to: 4,
+let myIterable = {  
   [Symbol.iterator]:  function() {
 
     if(this.from > this.to) {
@@ -11,6 +9,7 @@ let myIterable = {
       console.log(this.from)
       throw new Error('The values must be the numbers!')
     }
+
     return {
       
       current: this.from,
@@ -26,3 +25,6 @@ let myIterable = {
     }
   }
 }
+
+
+// Big O: O(1)
