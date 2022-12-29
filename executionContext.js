@@ -8,10 +8,10 @@ Array.prototype.myFilter = function (callback, context) {
   }
 
  
-  var resultArr = [];
+  let resultArr = [];
   
-  for (i = 0; i < this.length; i++) {
-      if (callback.call(context, this[i], i, obj)) {
+  for (let i = 0; i < this.length; i++) {
+      if (callback.call(context, this[i], i, this)) {
         resultArr.push(this[i])
       }
   
